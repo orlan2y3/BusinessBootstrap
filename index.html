@@ -153,7 +153,7 @@
     </div>
 
     <footer>
-        <p>Business Theme Copyright &copy; 2017 - <a href="#">Terms</a> &middot; <a href="#">Privacy</a>
+        <p>Business Theme Copyright &copy;<span id="year"></span> - <a href="#">Terms</a> &middot; <a href="#">Privacy</a>
     </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -161,6 +161,8 @@
     <script src="js/wow.js"></script>
     <script>
         new WOW().init();
+        const date = new Date();
+        document.getElementById("year").innerHTML = date.getFullYear();
     </script>
 </body>
 
